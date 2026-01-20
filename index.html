@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XJ Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <div class="badge">🚪 XJ Portal</div>
+        <h1>Pick a path. Enter XJ’s world.</h1>
+        <p class="sub">
+          Choose your vibe—then jump straight into the corresponding page on
+          <span class="mono">xjzhang.com</span>.
+        </p>
+
+        <div class="actions">
+          <button id="randomBtn" class="btn primary">🎲 Random route</button>
+          <a class="btn ghost" href="https://www.xjzhang.com/" target="_blank" rel="noreferrer">
+            🌐 Go to homepage
+          </a>
+        </div>
+      </header>
+
+      <section class="grid">
+        <button class="card" data-url="https://www.xjzhang.com/career" data-confetti="💼">
+          <div class="emoji">💼</div>
+          <h2>Performance</h2>
+          <p>Career highlights, roles, and operator + investor journey.</p>
+          <span class="hint">Enter → Career</span>
+        </button>
+
+        <button class="card" data-url="https://www.xjzhang.com/perspectives" data-confetti="🧠">
+          <div class="emoji">🧠</div>
+          <h2>Perspectives</h2>
+          <p>Writings & talks: AI, autonomy, systems, and reflection.</p>
+          <span class="hint">Enter → Perspectives</span>
+        </button>
+
+        <button class="card" data-url="https://www.xjzhang.com/impacts" data-confetti="🌱">
+          <div class="emoji">🌱</div>
+          <h2>Purpose</h2>
+          <p>Non-profits, mentoring, and long-term impact work.</p>
+          <span class="hint">Enter → Impacts</span>
+        </button>
+
+        <button class="card" data-url="https://www.xjzhang.com/stanford" data-confetti="🎓">
+          <div class="emoji">🎓</div>
+          <h2>People</h2>
+          <p>Stanford chapter: community, projects, and learning.</p>
+          <span class="hint">Enter → Stanford</span>
+        </button>
+      </section>
+
+      <footer class="foot">
+        <span>Tip: press <span class="kbd">R</span> for random.</span>
+      </footer>
+
+      <div id="toast" class="toast" aria-live="polite"></div>
+      <div id="confetti" class="confetti" aria-hidden="true"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
